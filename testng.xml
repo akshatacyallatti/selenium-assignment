@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/home/aksc/IdeaProjects/selenium-project">
+        <classes>
+            <class name="tests.LoginPageTest">
+                <methods>
+                    <include name="testLogin"/>
+                    <include name="testGetFirstProduct"/>
+                    <include name="testClickOnCartButton"/>
+                    <include name="testSelectPreviousYearFromDropDown"/>
+                    <include name="testClickOnItemLink"/>
+                    <include name="testClickOnBuyNow"/>
+                    <include name="testAddAnotherAddress"/>
+                </methods>
+            </class>
+            <class name="tests.ProductPageTest">
+                <methods>
+                    <include name="testClickThirdDeal"/>
+                    <include name="testAddMinimumQuantityToCart"/>
+                    <include name="testSearchFunctionality"/>
+                    <include name="testNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
